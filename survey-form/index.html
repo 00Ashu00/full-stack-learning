@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out the form below</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Name</label>
+    <input id="name" type="text" placeholder="Enter your name" required />
+
+    <label id="email-label" for="email">Email</label>
+    <input id="email" type="email" placeholder="Enter your email" required />
+
+    <label id="number-label" for="number">Age</label>
+    <input id="number" type="number" min="10" max="101" placeholder="Age" />
+
+    <label for="dropdown">Which option best describes you?</label>
+    <select id="dropdown">
+      <option value="student">Student</option>
+      <option value="job">Full Time Job</option>
+    </select>
+
+    <p>Would you recommend us?</p>
+    <label>
+      <input name="user-recommend" value="yes" type="radio" checked /> Yes
+    </label>
+    <label>
+      <input name="user-recommend" value="no" type="radio" /> No
+    </label>
+
+    <p>What are your hobbies?</p>
+    <label>
+      <input type="checkbox" value="coding" /> Coding
+    </label>
+    <label>
+      <input type="checkbox" value="gaming" /> Gaming
+    </label>
+
+    <p>Additional Comments</p>
+    <textarea placeholder="Enter your comment here..."></textarea>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+  </body>
+</html>
